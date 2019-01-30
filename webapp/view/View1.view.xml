@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="Test.Test.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true">
+	
+		<App xmlns="sap.m" id="idAppControl">
+			<pages>
+				<Page title="{i18n>title}">
+					<headerContent>
+						<Button
+							icon="sap-icon://hello-world"
+							press=".onOpenDialog"/>
+					</headerContent>
+					<content>
+						<mvc:XMLView viewName="Test.Test.view.HelloPanel"/>
+						<mvc:XMLView viewName="Test.Test.view.InvoiceList"/>
+						<!--<Panel-->
+			   <!--         	headerText="{i18n>helloPanelTitle}">-->
+						<!--	<content>-->
+						<!--	    <Button text="Button" press=".onShowHello"/>-->
+						<!--	    <Input-->
+						<!--	      value="{/recipient/name}"-->
+						<!--	      description="Hello {/recipient/name}"-->
+						<!--	      valueLiveUpdate="true"-->
+						<!--	      width="60%"/>-->
+						<!--	</content>-->
+						<!--</Panel>-->
+					</content>
+				</Page>
+			</pages>
+		</App>
+	
+</mvc:View>
