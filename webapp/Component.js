@@ -29,6 +29,8 @@ sap.ui.define([
 			this.setModel(models.createDeviceModel(), "device");
 			
 			this._helloDialog = new HelloDialog(this.getRootControl());
+			
+			
 		},
 
 
